@@ -168,7 +168,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-arpbind is not set
         # CONFIG_PACKAGE_luci-app-asterisk is not set
         # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
-        # CONFIG_PACKAGE_luci-app-autoreboot=y
+        # CONFIG_PACKAGE_luci-app-autoreboot is not set
         # CONFIG_PACKAGE_luci-app-baidupcs-web is not set
         # CONFIG_PACKAGE_luci-app-bcp38 is not set
         # CONFIG_PACKAGE_luci-app-bird1-ipv4 is not set
@@ -235,18 +235,18 @@ jobs:
         # CONFIG_PACKAGE_luci-app-openvpn-server is not set
         # CONFIG_PACKAGE_luci-app-p910nd is not set
         # CONFIG_PACKAGE_luci-app-pagekitec is not set
-        # CONFIG_PACKAGE_luci-app-passwall=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_pdnsd=y
-        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks=y
+        # CONFIG_PACKAGE_luci-app-passwall is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun is not set 
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_pdnsd is not set
+        # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks is not set
         # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin is not set
         # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs is not set
         # CONFIG_PACKAGE_luci-app-polipo is not set
@@ -267,23 +267,23 @@ jobs:
         # CONFIG_PACKAGE_luci-app-shairplay is not set
         # CONFIG_PACKAGE_luci-app-siitwizard is not set
         # CONFIG_PACKAGE_luci-app-simple-adblock is not set
-        # CONFIG_PACKAGE_luci-app-smartdns=y
+        # CONFIG_PACKAGE_luci-app-smartdns is not set
         # CONFIG_PACKAGE_luci-app-softethervpn is not set
         # CONFIG_PACKAGE_luci-app-splash is not set
         # CONFIG_PACKAGE_luci-app-sqm is not set
         # CONFIG_PACKAGE_luci-app-squid is not set
         # CONFIG_PACKAGE_luci-app-ssr-libev-server is not set
         CONFIG_PACKAGE_luci-app-ssr-plus=y
-        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks is not set
         CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
         CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun is not set
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server is not set
-        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks is not set
         # CONFIG_PACKAGE_luci-app-ssr-python-pro-server is not set
         # CONFIG_PACKAGE_luci-app-ssrserver-python is not set
         # CONFIG_PACKAGE_luci-app-statistics is not set
-        # CONFIG_PACKAGE_luci-app-syncdial=y
+        # CONFIG_PACKAGE_luci-app-syncdial is not set
         # CONFIG_PACKAGE_luci-app-syncthing is not set
         # CONFIG_PACKAGE_luci-app-tinyproxy is not set
         # CONFIG_PACKAGE_luci-app-transmission is not set
@@ -313,18 +313,18 @@ jobs:
         EOF
         # LuCI主题:
         cat >> .config <<EOF
-        # CONFIG_PACKAGE_luci-theme-argon_new=y
-        # CONFIG_PACKAGE_luci-theme-netgear=y
+        # CONFIG_PACKAGE_luci-theme-argon_new is not set
+        # CONFIG_PACKAGE_luci-theme-netgear is not set
         EOF
         # 常用软件包:
         # cat >> .config <<EOF
-        # CONFIG_PACKAGE_curl=y
-        # CONFIG_PACKAGE_htop=y
-        # CONFIG_PACKAGE_nano=y
-        # CONFIG_PACKAGE_screen=y
-        # CONFIG_PACKAGE_tree=y
-        # CONFIG_PACKAGE_vim-fuller=y
-         CONFIG_PACKAGE_wget=y
+        # CONFIG_PACKAGE_curl is not set
+        # CONFIG_PACKAGE_htop is not set
+        # CONFIG_PACKAGE_nano is not set
+        # CONFIG_PACKAGE_screen is not set
+        # CONFIG_PACKAGE_tree is not set
+        # CONFIG_PACKAGE_vim-fuller is not set
+        CONFIG_PACKAGE_wget=y
         # EOF
         # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
         # cat >> .config <<EOF
