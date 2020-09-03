@@ -76,9 +76,3 @@
 &wmac {
 	ralink,mtd-eeprom = <&factory 0x0>;
 };
-
-    © 2020 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
