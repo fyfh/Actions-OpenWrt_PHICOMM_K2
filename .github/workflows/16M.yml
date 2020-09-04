@@ -165,9 +165,7 @@ jobs:
         # EOF
         # mtk
         cat >> .config <<EOF
-        CONFIG_LUCI_APP_MTKWIFI=y
         CONFIG_PACKAGE_mt7620=y
-        CONFIG_PACKAGE_mtk-luci-plugin=y
         CONFIG_PACKAGE_wireless-tools=y
         EOF
         # 常用LuCI插件选择:
