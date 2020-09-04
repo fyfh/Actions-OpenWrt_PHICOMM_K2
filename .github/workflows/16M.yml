@@ -65,7 +65,6 @@ jobs:
         
     - name: Enable SSR Plus
       run: cd openwrt && echo 'src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01' >> feeds.conf.default
-    
 
 #    - name: Clone extra luci source code
  #     run: |
@@ -87,7 +86,10 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-           
+    
+    - name: Setup Debug Session
+      uses: P3TERX/debugger-action@master
+      
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
