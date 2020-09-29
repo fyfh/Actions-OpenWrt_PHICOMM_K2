@@ -61,8 +61,11 @@ jobs:
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
     - name: Enable SSR Plus
-      run: cd openwrt/package/lean && git clone https://github.com/sheno-Tyes/luci-app-ssr-plus.git
-        
+      run: |
+        git clone https://github.com/trojan-gfw/openwrt-trojan
+        cd openwrt/package/lean && git clone https://github.com/sheno-Tyes/luci-app-ssr-plus.git
+        cp $GITHUB_WORKSPACE/openwrt-trojan/* $GITHUB_WORKSPACE/openwrt/package/lean/ -rf
+    
 #    - name: Enable SSR Plus
 #      run: cd openwrt && echo 'src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01' >> feeds.conf.default
 
