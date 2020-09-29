@@ -63,6 +63,7 @@ jobs:
     - name: Enable SSR Plus
       run: |
         git clone https://github.com/trojan-gfw/openwrt-trojan
+        rm openwrt/package/lean/trojan -rf
         cd openwrt/package/lean && git clone https://github.com/sheno-Tyes/luci-app-ssr-plus.git
         cp $GITHUB_WORKSPACE/openwrt-trojan/* $GITHUB_WORKSPACE/openwrt/package/lean/ -rf
     
