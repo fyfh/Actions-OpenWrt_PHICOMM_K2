@@ -24,7 +24,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@7fce313c4c1447b05be991161cf59d22cd0a4c44
+      uses: actions/checkout@master
 
     - name: Initialization environment
       env:
@@ -57,7 +57,7 @@ jobs:
     - name: Clone source code
       env: 
         REPO_URL: https://github.com/coolsnowwolf/lede
-        REPO_BRANCH: master
+        REPO_BRANCH: 7fce313c4c1447b05be991161cf59d22cd0a4c44
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
     - name: Setup Debug Session
