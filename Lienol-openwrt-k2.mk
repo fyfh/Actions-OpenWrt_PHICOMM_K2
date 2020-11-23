@@ -556,7 +556,7 @@ TARGET_DEVICES += psg1208
 
 define Device/psg1218a
   DTS := PSG1218A
-  IMAGE_SIZE := 16064k
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := Phicomm PSG1218 rev.Ax
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += psg1218
